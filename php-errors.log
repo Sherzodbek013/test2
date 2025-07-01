@@ -1,0 +1,85 @@
+[01-Jul-2025 16:28:43 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:28:52 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:28:53 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:28:53 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:28:53 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:28:54 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:30:04 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:32:33 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:33 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:33 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:33 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:32:36 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:36 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:36 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:36 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:36 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:36 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:36 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:36 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:36 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:36 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:36 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:36 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:36 Europe/Moscow] ===== НОВЫЙ ЗАПРОС =====
+[01-Jul-2025 16:32:36 Europe/Moscow] Получены данные: Array
+(
+    [fullname] => Шерзод Фозилов
+    [country_code] => +7
+    [phone] => 9632393889
+    [email] => fozilovsherzodbek013@gmail.com
+    [project_type] => ww
+)
+
+[01-Jul-2025 16:32:36 Europe/Moscow] Успешно записано в БД
+[01-Jul-2025 16:32:37 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:32:37 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:32:37 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:32:37 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:32:40 Europe/Moscow] Успешно отправлено в Telegram
+[01-Jul-2025 16:33:55 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:33:58 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:33:58 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:33:58 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:33:58 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[01-Jul-2025 16:34:03 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419

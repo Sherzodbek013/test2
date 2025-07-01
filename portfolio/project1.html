@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Экспозиция 1 — Проекты EG</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="/projects.html">ПРОЕКТЫ</a></li>
+      <li><a href="/capabilities.html">Направление</a></li>
+      <li><a href="/about.html">О нас</a></li>
+      <li class="logo"><a href="/index.html">EG</a></li>
+      <li><a href="/vacancy.html">Вакансии</a></li>
+      <li><a href="/contacts.html">Контакты</a></li>
+      <li class="lang"><a href="/en/portfolio/project1.html" data-lang="en">EN</a> | <a href="project1.html" data-lang="ru">RU</a></li>
+      <li class="social">
+        <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram">
+          <img src="/img/telegram-app.png" alt="Telegram" />
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" aria-label="WhatsApp">
+          <img src="/img/whatsapp.png" alt="WhatsApp" />
+        </a>
+      </li>
+    </ul>
+    <ul class="subnav-list">
+      <li><a href="/business-events.html">Оформление мероприятий</a></li>
+      <li><a href="/spaces-branding.html"> Простравнства Брендинг</a></li>
+      <li><a href="/exhibitions.html">Музейные Выставки</a></li>
+      <li><a href="/urban-projects.html">Городские Проекты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="project-detail">
+  <h1>Экспозиция 1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam recusandae veniam modi! Porro, repudiandae tenetur! Officiis aliquid odio neque modi eum iste incidunt sunt dicta laborum dolor, sed ea.</p>
+<div class="project-gallery">
+  <div class="img-zoom-container">
+    <img src="https://picsum.photos/600/400?random=1" alt="Фото 1" data-full="https://picsum.photos/1200/800?random=1" width="270" />
+  </div>
+  <div class="img-zoom-container">
+    <img src="https://picsum.photos/600/400?random=12" alt="Фото 2" data-full="https://picsum.photos/1200/800?random=12" width="270" />
+  </div>
+  <div class="img-zoom-container">
+    <img src="https://picsum.photos/600/400?random=13" alt="Фото 3" data-full="https://picsum.photos/1200/800?random=13" width="270" />
+  </div>
+</div>
+<div id="modal-zoom" class="modal-zoom">
+  <span class="modal-close">&times;</span>
+  <span class="modal-prev">&#10094;</span>
+  <span class="modal-next">&#10095;</span>
+  <img id="modal-img" src="" alt="Zoomed photo">
+</div>
+  <div class="project-meta">
+    <p><strong>Год:</strong> 2025</p>
+    <p><strong>Локация:</strong> Йошкар Ола</p>
+    <p><strong>Заказчик:</strong> Пример компании</p>
+  </div>
+</main>
+
+<footer>
+  <p>© EG Production, 2025</p>
+</footer>
+
+<script src="/js/lupa.js"></script>
+</body>
+</html>

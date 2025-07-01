@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <a href="index.html" class="mobile-logo">EG</a>
+    <label for="burger-checkbox" class="burger">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </label>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="capabilities.html">Направление</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li class="logo"><a href="index.html">EG</a></li>
+        <li><a href="vacancy.html">Вакансии</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li class="lang"><a href="/en/business-events.html" data-lang="en">EN</a> | <a href="/business-events.html" data-lang="ru">RU</a></li>
+        <li class="social">
+          <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram">
+            <img src="img/telegram-app.png" alt="Telegram">
+          </a>
+          <a href="https://wa.me/yourwhatsapp" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp.png" alt="WhatsApp">
+          </a>
+        </li>
+      </ul>
+      <ul class="subnav-list">
+        <li><a href="business-events.html">Оформление мероприятий</a></li>
+        <li><a href="spaces-branding.html">Пространства | Брендинг</a></li>
+        <li><a href="exhibitions.html">Музейные Выставки</a></li>
+        <li><a href="urban-projects.html">Городские проекты</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu">
+      <ul class="mobile-nav-list">
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="capabilities.html">Направление</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="vacancy.html">Вакансии</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li class="mobile-submenu">
+          <a href="#">Дополнительно</a>
+          <ul class="mobile-subnav-list">
+            <li><a href="business-events.html">Оформление мероприятий</a></li>
+            <li><a href="spaces-branding.html">Пространства | Брендинг</a></li>
+            <li><a href="exhibitions.html">Музейные Выставки</a></li>
+            <li><a href="urban-projects.html">Городские проекты</a></li>
+          </ul>
+        </li>
+        <li class="mobile-lang">
+          <a href="/en/business-events.html" data-lang="en">EN</a> | 
+          <a href="/business-events.html" data-lang="ru">RU</a>
+        </li>
+        <li class="mobile-social">
+          <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram">
+            <img src="img/telegram-app.png" alt="Telegram">
+          </a>
+          <a href="https://wa.me/yourwhatsapp" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp.png" alt="WhatsApp">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1>Главная</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate laborum beatae tenetur, molestias quos et recusandae animi quod eum eveniet earum? Corrupti ipsum consequatur aspernatur sint ea et saepe.</p>
+  </main>
+
+  <section class="request-form-section">
+    <div class="form-container">
+      <h2>ОБСУДИТЬ ПРОЕКТ</h2>
+      <p class="form-subtitle">Заполните форму</p>
+      <form id="project-form" action="submit_form.php" method="POST">
+        <div class="form-group">
+          <label for="fullname">ФИО</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <div class="phone-input">
+              <select id="country-code" name="country_code" required>
+                <option value="+7">Россия (+7)</option>
+                <option value="+375">Беларусь (+375)</option>
+                <option value="+77">Казахстан (+77)</option>
+                <option value="+380">Украина (+380)</option>
+                <option value="other">Другая</option>
+              </select>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-type">Тип проекта*</label>
+          <textarea id="project-type" name="project_type" placeholder="Опишите ваш проект" required></textarea>
+        </div>   
+        <button type="submit" class="submit-btn">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© EG Production, 2025</p>
+  </footer>
+  <div id="cookie-notice" class="cookie-notice">
+    <div class="cookie-content">
+      <span>Мы используем cookies</span>
+      <div class="cookie-buttons">
+        <a href="/privacy.html" class="cookie-more">Подробнее</a>
+        <button id="cookie-accept" class="cookie-btn">ОК</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/cookies.js"></script>
+  
+</body>
+</html>

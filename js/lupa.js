@@ -1,0 +1,68 @@
+const galleryImgs = Array.from(document.querySelectorAll('.img-zoom-container img'));
+const modal = document.getElementById('modal-zoom');
+const modalImg = document.getElementById('modal-img');
+const modalClose = document.querySelector('.modal-close');
+const modalPrev = document.querySelector('.modal-prev');
+const modalNext = document.querySelector('.modal-next');
+
+let currentIndex = 0;
+let zoomed = false;
+
+galleryImgs.forEach((img, idx) => {
+  img.addEventListener('click', function() {
+    currentIndex = idx;
+    openModal();
+  });
+});
+
+function openModal() {
+  const img = galleryImgs[currentIndex];
+  modalImg.src = img.dataset.full || img.src;
+  modalImg.style.transform = 'scale(1)';
+  modal.classList.add('active');
+  zoomed = false;
+  modalImg.style.cursor = 'zoom-in';
+}
+
+modalClose.onclick = function() {
+  modal.classList.remove('active');
+};
+
+modal.onclick = function(e) {
+  if (e.target === modal) modal.classList.remove('active');
+};
+
+// Зум по клику
+modalImg.onclick = function(e) {
+  zoomed = !zoomed;
+  this.style.transform = zoomed ? 'scale(2)' : 'scale(1)';
+  this.style.cursor = zoomed ? 'zoom-out' : 'zoom-in';
+  e.stopPropagation(); // 
+};
+
+// Навигация
+modalPrev.onclick = function(e) {
+  e.stopPropagation();
+  currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+  openModal();
+};
+modalNext.onclick = function(e) {
+  e.stopPropagation();
+  currentIndex = (currentIndex + 1) % galleryImgs.length;
+  openModal();
+};
+
+document.addEventListener('keydown', function(e) {
+  if (!modal.classList.contains('active')) return;
+  if (e.key === 'ArrowLeft') {
+    currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+    openModal();
+  }
+  if (e.key === 'ArrowRight') {
+    currentIndex = (currentIndex + 1) % galleryImgs.length;
+    openModal();
+  }
+  if (e.key === 'Escape') {
+    modal.classList.remove('active');
+  }
+});
