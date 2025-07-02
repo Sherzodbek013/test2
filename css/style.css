@@ -870,3 +870,24 @@ textarea {
   cursor: pointer;
   margin-top: 20px;
 }
+.open-form-btn {
+  background-color: #f6b93b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 60px auto 40px auto;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  transition: background 0.2s, box-shadow 0.3s;
+}
+.open-form-btn:hover {
+  background: #e0a42d;
+  box-shadow: 0 10px 32px rgba(246,185,59,0.13);
+}
+.hidden {
+  display: none ;
+}
