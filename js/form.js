@@ -14,6 +14,10 @@ document.getElementById('project-form').addEventListener('submit', function(e) {
     .then(() => {
         form.reset();
         successModal.classList.remove('hidden');
+        fetch('send_mail.php', {
+            method: 'POST',
+            body: formData
+        });
     })
     .catch(error => {
         console.error('Ошибка:', error);

@@ -1,0 +1,8 @@
+[02-Jul-2025 16:01:30 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:01:33 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:03:34 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:03:46 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:08:01 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:15:10 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:21:39 Europe/Moscow] PHP Fatal error:  Maximum execution time of 3 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[02-Jul-2025 16:31:56 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
