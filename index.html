@@ -71,12 +71,10 @@
       </ul>
     </div>
   </header>
-
   <main>
     <h1>Главная</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate laborum beatae tenetur, molestias quos et recusandae animi quod eum eveniet earum? Corrupti ipsum consequatur aspernatur sint ea et saepe.</p>
   </main>
-
   <section class="request-form-section">
     <div class="form-container">
       <h2>ОБСУДИТЬ ПРОЕКТ</h2>
@@ -108,8 +106,16 @@
         <div class="form-group">
           <label for="project-type">Тип проекта*</label>
           <textarea id="project-type" name="project_type" placeholder="Опишите ваш проект" required></textarea>
-        </div>   
+        </div>  
+   
         <button type="submit" class="submit-btn">Отправить заявку</button>
+        <div id="success-modal" class="success-modal hidden">
+  <div class="success-content">
+    <p>Заявка успешно отправлена!</p>
+    <button id="close-success" class="close-success">Закрыть</button>
+  </div>
+</div>
+
       </form>
     </div>
   </section>
@@ -126,10 +132,8 @@
       </div>
     </div>
   </div>
-  
   <script src="js/script.js"></script>
   <script src="js/form.js"></script>
   <script src="js/cookies.js"></script>
-  
 </body>
 </html>

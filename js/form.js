@@ -3,18 +3,27 @@ document.getElementById('project-form').addEventListener('submit', function(e) {
     
     const form = e.target;
     const formData = new FormData(form);
-    
+    const messageBox = document.getElementById('form-message');
+    const successModal = document.getElementById('success-modal');
+    const closeBtn = document.getElementById('close-success');
+
     fetch(form.action, {
         method: 'POST',
         body: formData
     })
     .then(response => response.text())
     .then(data => {
-        alert(data); 
-        form.reset(); 
+        messageBox.textContent = '';
+        successModal.classList.remove('hidden');
+        form.reset();
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Произошла ошибка при отправке формы');
+        messageBox.textContent = 'Произошла ошибка при отправке формы';
+        messageBox.style.color = 'red';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        successModal.classList.add('hidden');
     });
 });

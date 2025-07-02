@@ -45,8 +45,8 @@ $message = "
 Email: $email
 Проект: $project_type
 ";
-$headers = "From: no-reply@eg-production.ru";
-ini_set("SMTP", "smtp.timeweb.ru");
+$headers = "From: fo.ru";
+ini_set("SMTP", "smtp.yandex.ru");
 ini_set("smtp_port", "25");
 ini_set("sendmail_from", "noreply@eg-production.ru");
 mail($to, $subject, $message, $headers);
@@ -63,5 +63,5 @@ $telegramMessage = urlencode("
 $telegramUrl = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=$telegramMessage";
 file_get_contents($telegramUrl);
 
-echo "Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время";
+echo "";
 ?>
