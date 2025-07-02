@@ -103,4 +103,3 @@ function getCookie(name){
   }
   return null;
 }
-

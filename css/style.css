@@ -883,6 +883,7 @@ textarea {
   margin: 60px auto 40px auto;
   box-shadow: 0 6px 24px rgba(0,0,0,0.10);
   transition: background 0.2s, box-shadow 0.3s;
+
 }
 .open-form-btn:hover {
   background: #e0a42d;
@@ -890,4 +891,21 @@ textarea {
 }
 .hidden {
   display: none ;
+}
+.close-form-btn{
+position: absolute;
+top: 18px;
+font-size: 1.3em;
+border-radius: 4px;
+right: 18px;
+color: #818181;
+z-index: 10;
+transition: color 0.2;
+line-height: 1;
+}
+.close-form-btn:hover{
+  color: #f6b93b;
+}
+.form-container {
+  position: relative;
 }
