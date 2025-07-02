@@ -1,9 +1,8 @@
 document.getElementById('project-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const form = e.target;
     const formData = new FormData(form);
-    const messageBox = document.getElementById('form-message');
     const successModal = document.getElementById('success-modal');
     const closeBtn = document.getElementById('close-success');
 
@@ -12,15 +11,12 @@ document.getElementById('project-form').addEventListener('submit', function(e) {
         body: formData
     })
     .then(response => response.text())
-    .then(data => {
-        messageBox.textContent = '';
-        successModal.classList.remove('hidden');
+    .then(() => {
         form.reset();
+        successModal.classList.remove('hidden');
     })
     .catch(error => {
-        console.error('Error:', error);
-        messageBox.textContent = 'Произошла ошибка при отправке формы';
-        messageBox.style.color = 'red';
+        console.error('Ошибка:', error);
     });
 
     closeBtn.addEventListener('click', () => {
