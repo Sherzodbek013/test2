@@ -32,15 +32,14 @@ modal.onclick = function(e) {
   if (e.target === modal) modal.classList.remove('active');
 };
 
-// Зум по клику
+
 modalImg.onclick = function(e) {
   zoomed = !zoomed;
   this.style.transform = zoomed ? 'scale(2)' : 'scale(1)';
   this.style.cursor = zoomed ? 'zoom-out' : 'zoom-in';
-  e.stopPropagation(); // 
+  e.stopPropagation(); 
 };
 
-// Навигация
 modalPrev.onclick = function(e) {
   e.stopPropagation();
   currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
