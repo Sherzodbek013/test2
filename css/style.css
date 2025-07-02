@@ -889,9 +889,7 @@ textarea {
   background: #e0a42d;
   box-shadow: 0 10px 32px rgba(246,185,59,0.13);
 }
-.hidden {
-  display: none ;
-}
+
 .close-form-btn{
 position: absolute;
 top: 18px;
@@ -909,3 +907,21 @@ line-height: 1;
 .form-container {
   position: relative;
 }
+.request-form-section {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(24, 24, 24, 1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+.hidden {
+  display: none !important;
+}
+
