@@ -8,3 +8,8 @@
 [02-Jul-2025 16:31:56 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
 [02-Jul-2025 18:21:01 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
 [02-Jul-2025 18:27:55 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[03-Jul-2025 11:45:56 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[03-Jul-2025 12:31:13 Europe/Moscow] PHP Warning:  require_once(C:\OSPanel\domains\eg-productionPHPMailer-master/src/Exception.php): failed to open stream: No such file or directory in C:\OSPanel\domains\eg-production\send_mail.php on line 7
+[03-Jul-2025 12:31:13 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required 'C:\OSPanel\domains\eg-productionPHPMailer-master/src/Exception.php' (include_path='.') in C:\OSPanel\domains\eg-production\send_mail.php on line 7
+[03-Jul-2025 12:34:41 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
+[03-Jul-2025 12:37:25 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
