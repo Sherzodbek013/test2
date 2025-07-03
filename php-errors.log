@@ -13,3 +13,23 @@
 [03-Jul-2025 12:31:13 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required 'C:\OSPanel\domains\eg-productionPHPMailer-master/src/Exception.php' (include_path='.') in C:\OSPanel\domains\eg-production\send_mail.php on line 7
 [03-Jul-2025 12:34:41 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer-master\src\SMTP.php on line 419
 [03-Jul-2025 12:37:25 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 14:57:11 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 14:57:35 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 14:57:44 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:05:25 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:05:39 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:05:53 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:06:01 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:06:46 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:09:59 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:10:09 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:21:19 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:21:27 Europe/Moscow] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OSPanel\domains\eg-production\PHPMailer\src\SMTP.php on line 419
+[03-Jul-2025 15:32:43 Europe/Moscow] PHP Warning:  file_get_contents(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac in C:\OSPanel\domains\eg-production\submit_form.php on line 15
+[03-Jul-2025 15:32:43 Europe/Moscow] PHP Warning:  file_get_contents(): SSL: Операция успешно завершена.
+ in C:\OSPanel\domains\eg-production\submit_form.php on line 15
+[03-Jul-2025 15:32:45 Europe/Moscow] PHP Warning:  file_get_contents(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac in C:\OSPanel\domains\eg-production\send_mail.php on line 17
+[03-Jul-2025 15:32:45 Europe/Moscow] PHP Warning:  file_get_contents(): SSL: Операция успешно завершена.
+ in C:\OSPanel\domains\eg-production\send_mail.php on line 17
