@@ -632,6 +632,11 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+h2 {
+  color: #f8f3f3;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 .form-subtitle {
   text-align: center;
@@ -921,7 +926,6 @@ line-height: 1;
   margin: 0;
   overflow-y: auto;
 }
-.hidden {
+.form-popup-hidden {
   display: none !important;
 }
-
