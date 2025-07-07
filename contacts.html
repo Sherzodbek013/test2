@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -22,7 +22,7 @@
       <li><a href="about.html">О нас</a></li>
       <li class="logo"><a href="index.html">EG</a></li>
       <li><a href="vacancy.html">Вакансии</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="contacts.html" class="active">Контакты</a></li>
       <li class="lang"><a href="/en/business-events.html" data-lang="en">EN</a> | <a href="/business-events.html" data-lang="ru">RU</a></li>
       <li class="social">
         <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram">
@@ -46,7 +46,7 @@
       <li><a href="capabilities.html">Направление</a></li>
       <li><a href="about.html">О нас</a></li>
       <li><a href="vacancy.html">Вакансии</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="contacts.html" class="active">Контакты</a></li>
       <li class="mobile-submenu">
         <a href="#">Дополнительно</a>
         <ul class="mobile-subnav-list">
@@ -71,13 +71,54 @@
     </ul>
   </div>
 </header>
-  <main>
+<main>
+  <div class="contacts-main-centered">
     <h1>Контакты</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate laborum beatae tenetur, molestias quos et recusandae animi quod eum eveniet earum? Corrupti ipsum consequatur aspernatur sint ea et saepe..</p>
-  </main>
-  <script src="js/script.js"></script>
-  <footer>
-    <p>© EG Production, 2025</p>
-  </footer>
+    <div class="contacts-card">
+      <div class="contacts-info">
+        <h2>Офис</h2>
+        <p class="icon-address">улица ...</p>
+        <p class="icon-phone"><a href="tel:+74951234567">+7 8923893892</a></p>
+        <p class="icon-mail"><a href="mailto:info@company.ru">"@"</a></p>
+        <div class="contacts-actions">
+          <a href="https://3.redirect.appmetrica.yandex.com/route?end-lat=55.7558&end-lon=37.6176" class="btn yellow-btn" target="_blank">Доехать на такси</a>
+          <a href="https://yandex.ru/maps/?rtext=~55.7558,37.6176" class="btn yellow-btn" target="_blank">Построить маршрут</a>
+          <a href="https://yandex.ru/maps/?ll=37.6176%2C55.7558&z=16" class="btn yellow-btn" target="_blank">Открыть на Яндекс.Картах</a>
+        </div>
+      </div>
+      <div class="contacts-map">
+        <script type="text/javascript" charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeec70c8fb2c65a8363344902c2112b5aea9b64ab4d172325b5ffa7419727ee68&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true">
+  </script>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-block footer-logo">
+      <div class="footer-logo-img">EG<br><span>PRODUCTION</span></div>
+      <div class="footer-copy">©  | 1488-2222</div>
+    </div>
+    <div class="footer-block">
+      <div class="footer-title">Йошкар-Ола</div>
+      <a href="tel:+71234567890" class="footer-phone">+7 (123) 456 78 90</a>
+      <a href="mailto:office@eg-production.ru" class="footer-mail">foz1lovsherzod@yandex.ru</a>
+    </div>
+    <div class="footer-block">
+      <div class="footer-title">Telegram | WhatsApp</div>
+      <a href="tel:+71234567890" class="footer-phone">+7 (123) 456 78 90</a>
+      <div class="footer-social">
+        <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram">
+          <img src="img/telegram-app.png" alt="Telegram">
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" aria-label="WhatsApp">
+          <img src="img/whatsapp.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+  </div>
+ </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
