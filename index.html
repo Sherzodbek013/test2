@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
   <header class="main-header">
     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
     <a href="index.html" class="mobile-logo">EG</a>
@@ -71,10 +72,24 @@
       </ul>
     </div>
   </header>
+  <div class="hero-video-bg" id="hero-video-bg">
+  <video id="heroBgVideo" autoplay muted loop playsinline>
+    <source src="img/1115723_Cinema_Man_3840x2160 (1).mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay" id="heroOverlay"></div>
+  <div class="hero-content">
+    <h2>52 | 52 | 52</h2>
+    <h1>Текст</h1>
+    <button class="showreel-btn" id="openModalBtn">&#9658; SHOWREEL</button>
+    <div class="arrow-down" id="arrow-down"></div>
+  </div>
+</div>
   <main>
     <h1>Главная</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate laborum beatae tenetur, molestias quos et recusandae animi quod eum eveniet earum? Corrupti ipsum consequatur aspernatur sint ea et saepe.</p>
+
   </main>
+
   <button id="open-form-btn" class="open-form-btn">Оставить заявку</button>
   <section class="request-form-section form-popup-hidden" id="popup-form-section">
     <div class="form-container">
@@ -119,7 +134,7 @@
 </div>
     </div>
   </section>
-<footer class="main-footer">
+ <footer class="main-footer">
   <div class="footer-container">
     <div class="footer-block footer-logo">
       <div class="footer-logo-img">EG<br><span>PRODUCTION</span></div>
@@ -153,6 +168,14 @@
       </div>
     </div>
   </div>
+  <div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <button id="closeVideoModal" class="close-video-modal">&times;</button>
+    <video id="modalVideo" controls>
+      <source src="img/1115723_Cinema_Man_3840x2160 (1).mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
   <script src="js/script.js"></script>
   <script src="js/form.js"></script>
   <script src="js/cookies.js"></script>

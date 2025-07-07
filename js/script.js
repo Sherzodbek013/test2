@@ -1,4 +1,4 @@
-// Отвечает за появление анимации карточек при прокрутке
+// анимация каррточек
 const observer = new IntersectionObserver((entries) => { 
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -9,7 +9,6 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.2
 });
 
-// Запускаю наблюдение за каждой карточкой
 document.querySelectorAll('.card').forEach(card => {
   observer.observe(card);
 });
@@ -51,19 +50,76 @@ document.addEventListener('DOMContentLoaded', () => {
     // (папка + список фоток)
   ];
 
-  // Прохожусь по каждой карточке, для каждой выбираю рандом фото из нужной папки
+  // рандом фото
   document.querySelectorAll('.card-grid .card').forEach((card, idx) => {
     const cardImg = card.querySelector('.card-image');
 
     if (projects[idx] && cardImg) {
       const { folder, files } = projects[idx];
       const rnd = Math.floor(Math.random() * files.length); // беру случайное фото
-      // Обязательно заменяю пробелы на %20, чтобы картинки грузились в браузере!
       const imgPath = `${folder}/${files[rnd]}`.replace(/ /g, '%20');
       cardImg.style.backgroundImage = `url('${imgPath}')`;
     }
   });
-});
+
+  const mainHeader = document.querySelector('.main-header');
+  const heroBlock = document.getElementById('hero-video-bg');
+  const heroBgVideo = document.getElementById('heroBgVideo');
+  const heroOverlay = document.getElementById('heroOverlay');
+  const openBtn = document.getElementById('openModalBtn');
+  const modal = document.getElementById('videoModal');
+  const closeModal = document.getElementById('closeVideoModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  // Хедер становится прозрачным только на hero
+  if (mainHeader && heroBlock && heroBgVideo && heroOverlay) {
+    function updateHeaderOnScroll() {
+      if (window.scrollY > (window.innerHeight - 120)) {
+        heroBgVideo.style.opacity = '0';
+        heroOverlay.style.background = 'rgba(0,0,0,1)';
+        mainHeader.classList.remove('transparent');
+      } else {
+        heroBgVideo.style.opacity = '1';
+        heroOverlay.style.background = 'rgba(0,0,0,0.35)';
+        mainHeader.classList.add('transparent');
+      }
+    }
+    // при загрузке страницы
+    mainHeader.classList.add('transparent');
+    updateHeaderOnScroll();
+    window.addEventListener('scroll', updateHeaderOnScroll);
+  } else if (mainHeader) {
+    // Если hero нет — хедер всегда черный
+    mainHeader.classList.remove('transparent');
+  }
+
+  if (openBtn && modal && closeModal && modalVideo) {
+    openBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.classList.add('open');
+      modalVideo.currentTime = 0;
+      modalVideo.play();
+    });
+    closeModal.addEventListener('click', function() {
+      modal.classList.remove('open');
+      modalVideo.pause();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('open')) {
+        modal.classList.remove('open');
+        modalVideo.pause();
+      }
+    });
+    // Клик вне плеера (закрытие модалки)
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+        modalVideo.pause();
+      }
+    });
+  }
+
+}); // DOMContentLoaded END
 
 // Счётчики 
 function createCounter(containerId, digitsCount = 5) {
