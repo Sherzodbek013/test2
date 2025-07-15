@@ -14,7 +14,7 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // (меняет активную ссылку в меню)
+
   const path = window.location.pathname.toLowerCase();
   const currentLang = path.startsWith('/en/') ? 'en' : 'ru';
   const langLinks = document.querySelectorAll('.lang a');
@@ -29,39 +29,290 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Массив проектов, указываю папку и список фоток для каждой карточки
-  const projects = [
+
+
+  // массив проектов
+  const allProjects = [
     {
-      folder: '/img/Портфолио/Белозерск Этнография',
-      files: [
-        'фото 1.jpg', 'фото 2.jpg', 'фото 3.jpg', 'фото 4.jpg', 'фото 5.jpg',
-        'фото 6.jpg', 'фото 7.jpg', 'фото 8.jpg', 'фото 9.jpg', 'фото 10.jpg',
-        'фото 11.jpg', 'фото 12.jpg', 'фото 13.jpg', 'фото 14.jpg', 'фото 15.jpg',
-        'фото 16.jpg', 'фото 17.jpg', 'фото 18.jpg', 'фото 19.jpg'
+      link: 'portfolio/project1.html',
+      subtitle: 'Белозерский областной краеведческий музей',
+      title: 'Музей этнографии',
+      desc: 'Белозерск | 2023',
+      images: [
+        '/img/Портфолио/Белозерск Этнография/фото 1.jpg',
+        '/img/Портфолио/Белозерск Этнография/фото 2.jpg',
+        
       ]
     },
     {
-      folder: '/img/Портфолио/Белозерск Музей Орлова',
-      files: [
-        'фото 1.jpg', 'фото 2.jpg', 'фото 3.jpg', 'фото 4.jpg',
-        'фото 5.jpg', 'фото 6.jpg', 'фото 7.jpg'
+      link: 'portfolio/project2.html',
+      subtitle: 'Белозерский областной краеведческий музей',
+      title: 'Мемориальный дом-музей поэта С.С. Орлова',
+      desc: 'Белозерск | 2023',
+      images: [
+        '/img/Портфолио/Белозерск Музей Орлова/фото 1.jpg',
+        
       ]
     },
-    // (папка + список фоток)
+    {
+      link: 'portfolio/project3.html',
+      subtitle: 'Визит-центр Валдайского национального парка',
+      title: 'не указан',
+      desc: 'Валдай | 2016',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project4.html',
+      subtitle: 'Ювелирное искусство ХVII-XIV веков "Новгородский государственный объединённый музей-заповедник"',
+      title: 'Грановитая палата',
+      desc: 'Великий Новгород | 2016',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project5.html',
+      subtitle: 'ФБГУК «Новгородский государственный объединённый музей-заповедник»',
+      title: 'Проект экспозиция «Музей Великого моста»',
+      desc: 'Великий Новгород | 2021-2022',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project6.html',
+      subtitle: 'ФБГУК «Новгородский государственный объединённый музей-заповедник»',
+      title: 'Экспозиция «Музей письменности»',
+      desc: 'Великий Новгород | 2021',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project7.html',
+      subtitle: 'Зал спортивной славы ГОАУ ДО «СШ» Спорт-индустрия»',
+      title: 'не указан',
+      desc: 'Великий Новгород | 2023',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project8.html',
+      subtitle: 'ФБГУК «Новгородский государственный объединённый музей-заповедник»',
+      title: 'Экспозиция «Эволюция власти. Памятники сфрагистики и нумизматики из собрания Новгородского музея-заповедника»',
+      desc: 'Великий Новгород | 2018',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project9.html',
+      subtitle: 'не указан',
+      title: 'Передвижной выставочный проект «Волжская Булгария. Великое наследие»',
+      desc: '2022',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project10.html',
+      subtitle: 'Музей «ГАЗПРОМ ДОБЫЧА УРЕНГОЙ»',
+      title: 'Не указан',
+      desc: 'Новый Уренгой | 2011',
+      images: [
+
+      ]
+    },    
+    {
+      link: 'portfolio/project11.html',
+      subtitle: 'Краеведческий музей им. Ф.И. Пыжьянова',
+      title: 'Неизвестно',
+      desc: 'Южно-Курильск | 2018',
+      images: [
+
+      ]
+    }, 
+    {
+      link: 'portfolio/project12.html',
+      subtitle: 'Не указан',
+      title: 'Предпроект «Портсмут»',
+      desc: 'Кронштадт | 2017',
+      images: [
+
+      ]
+    }, 
+    {
+      link: 'portfolio/project13.html',
+      subtitle: '«Музей театрального и музыкального искусства»',
+      title: 'Неизвестно',
+      desc: 'Санкт-Петербург | 2015',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project14.html',
+      subtitle: 'Музей не указан',
+      title: 'Историческая экспозиция',
+      desc: 'Остров 2015 | 2016',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project15.html',
+      subtitle: 'Военно-исторический комплекс «Линия Сталина» в деревне Холматка Островского района Псковской области',
+      title: 'Не указан',
+      desc: 'Псков | 2018',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project16.html',
+      subtitle: 'Музей Боевой славы Третьего ратного поля России',
+      title: 'Экспозиция раздела «История края». Село Прохоровка Белгородской области',
+      desc: 'Белгородск| Прохоровка | 2012',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project17.html',
+      subtitle: 'Музей «РОСПАН»',
+      title: 'Не указан',
+      desc: 'Новый Уренгой | 2015',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project18.html',
+      subtitle: 'Российский этнографический музей',
+      title: 'Передвижной выставочный проект «Волжская Булгария. Великое наследие»',
+      desc: 'Волжск | 2022',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project19.html',
+      subtitle: 'Музей железнодоржных дорог',
+      title: 'Не указан',
+      desc: 'Санкт-Петербург | 2018',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project20.html',
+      subtitle: 'Музей хлеба',
+      title: 'не указан',
+      desc: 'Санкт-Петербург | 2017',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project21.html',
+      subtitle: 'Музей романа Ф. М. Достоевского «Братья Карамазовы»',
+      title: 'не указан',
+      desc: 'Старая Русса | 2018',
+      images: [
+
+      ]
+    }, 
+    {
+      link: 'portfolio/project22.html',
+      subtitle: 'МБУК «Устьянский краеведческий музей»',
+      title: 'Экспозиция',
+      desc: 'Устьянск | 2022-2023',
+      images: [
+
+      ]
+    }, 
+    {
+      link: 'portfolio/project23.html',
+      subtitle: 'Музей соборов Царскосельского благочиния',
+      title: 'Не указан',
+      desc: 'Царское село | 2015',
+      images: [
+
+      ]
+    }, 
+    {
+      link: 'portfolio/project24.html',
+      subtitle: '«Центр исторического наследия Южно-Уральской железной дороги»',
+      title: 'Не указан',
+      desc: 'Челябинск | 2019-2020',
+      images: [
+
+      ]
+    },
+    {
+      link: 'portfolio/project25.html',
+      subtitle: 'Мемориальный комплекс «Победа»',
+      title: 'Зал, посвященный жизни и работе в тылу',
+      desc: 'Южно-Сахалинск | 2017',
+      images: [
+
+      ]
+    },                                
+       
   ];
 
-  // рандом фото
+  const cardsPerLoad = 6; 
+  let renderedCards = 0;
+
+  function renderCards() {
+    const grid = document.querySelector('.card-grid');
+    if (!grid) return;
+    for (let i = 0; i < cardsPerLoad && renderedCards < allProjects.length; i++) {
+      const project = allProjects[renderedCards];
+      // Рандомное фото
+      const img = project.images.length
+        ? project.images[Math.floor(Math.random() * project.images.length)].replace(/ /g, '%20')
+        : '';
+      const card = document.createElement('div');
+      card.className = 'card hidden';
+      card.innerHTML = `
+        <a href="${project.link}" style="display:block; height:100%;">
+          <div class="card-image" style="background-image: url('${img}')"></div>
+          <div class="card-content">
+            <div class="card-subtitle">${project.subtitle}</div>
+            <div class="card-title">${project.title}</div>
+            <div class="card-desc">${project.desc}</div>
+          </div>
+        </a>
+      `;
+      grid.appendChild(card);
+      observer.observe(card);
+      renderedCards++;
+    }
+  }
+
+  // lazy load
+  window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+      renderCards();
+    }
+  });
+
+  renderCards();
+
+  
   document.querySelectorAll('.card-grid .card').forEach((card, idx) => {
     const cardImg = card.querySelector('.card-image');
-
     if (projects[idx] && cardImg) {
       const { folder, files } = projects[idx];
-      const rnd = Math.floor(Math.random() * files.length); // беру случайное фото
+      const rnd = Math.floor(Math.random() * files.length);
       const imgPath = `${folder}/${files[rnd]}`.replace(/ /g, '%20');
       cardImg.style.backgroundImage = `url('${imgPath}')`;
     }
   });
-
   const mainHeader = document.querySelector('.main-header');
   const heroBlock = document.getElementById('hero-video-bg');
   const heroBgVideo = document.getElementById('heroBgVideo');
@@ -84,12 +335,10 @@ document.addEventListener('DOMContentLoaded', () => {
         mainHeader.classList.add('transparent');
       }
     }
-    // при загрузке страницы
     mainHeader.classList.add('transparent');
     updateHeaderOnScroll();
     window.addEventListener('scroll', updateHeaderOnScroll);
   } else if (mainHeader) {
-    // Если hero нет — хедер всегда черный
     mainHeader.classList.remove('transparent');
   }
 
@@ -110,7 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modalVideo.pause();
       }
     });
-    // Клик вне плеера (закрытие модалки)
     modal.addEventListener('click', function(e) {
       if (e.target === modal) {
         modal.classList.remove('open');
@@ -121,7 +369,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }); // DOMContentLoaded END
 
-// Счётчики 
 function createCounter(containerId, digitsCount = 5) {
   const container = document.getElementById(containerId);
   container.innerHTML = '';
@@ -150,7 +397,6 @@ function updateCounter(containerId, numberStr) {
   }
 }
 
-// Анимация увеличения чисел 
 function animateCounter(containerId, target, duration) {
   const digitsCount = target.toString().length;
   createCounter(containerId, digitsCount);
@@ -176,13 +422,10 @@ function animateCounter(containerId, target, duration) {
   step();
 }
 
-// Запускаю анимацию для всех трёх счётчиков 
 animateCounter('counter1', 120000, 500);
 animateCounter('counter2', 40058, 500);
 animateCounter('counter3', 15000, 500);
-// ... можно сюда добавить еще
 
-// Бургер
 document.querySelectorAll('.mobile-submenu > a').forEach(item => {
   item.addEventListener('click', function(e) {
     e.preventDefault();
@@ -190,7 +433,6 @@ document.querySelectorAll('.mobile-submenu > a').forEach(item => {
   });
 });
 
-//функции для работы с куками установка и получение значений
 function setCookie(name, value, days) {
   const expires = new Date();
   expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);

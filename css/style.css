@@ -8,7 +8,9 @@ body {
   min-height: 100vh;
 }
 main {
-  flex: 1 0 auto;           
+  flex: 1 0 auto;
+  padding-top: 85px;
+  box-sizing: border-box;           
 }
 
 footer {
